@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'hello_moon/bla'
+
+  get 'hello_moon/moa'
+
+  get 'hello_moon/dea'
+
+  get 'static_pages/home'
+
+  get 'static_pages/help'
+
+  get 'static_pages/about'
+
   resources :microposts
 
   resources :users

@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+/* 
+
+5.2 'Sass'와 'asset' 파이프라인(pipeline)
+5.2.1 에셋 파이프라인(the asset pipeline)
+asset 파이프라인은 레일스(Rails)의 변화와 관련이 큰데요. 흔한 레일스 개발자의 눈으로 이해할 수 있는 세가지 형태가 있습니다. 에셋 디렉토리(asset directories), 매니페스트 파일(manifest files), 그리고 preprocessor engines가 있습니다. 한번 알아볼까요.
+
+레일스 버전 3.0 이전에는 ...
+
+최신 레일스 버전에는 각자 나름 이유가 있는 디렉토리가 있습니다. 
+app/assets : 현재 애플리케이션에서 드러나는 에셋
+lib/assets : 함께 개발하는 팀이 작성한 라이브러리를 위한 에셋
+vendor/assets : third-party vendors의 에셋
+
+각 디렉토리는 하위 디렉토리를 갖고 있습니다.
+images/ javascripts/ stylesheeets/
+...
+
+매니페스트 파일(Manifest files)
+... 레일스에게 다음과 같이 말하면 매니페스트 파일을 쓸 수 있습니다. single files의 모습이 갖춰질 수 있도록 합쳐줘. 라고 말이지요. (이미지에는 적용 안되고, CSS나 Javascript에 적용됩니다.) 예를 들어보지요.
+
+
+ */

@@ -1,0 +1,24 @@
+<% provide(:title, "Log in") %>
+<%= content_tag(:h1, "Log in") %>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<%= form_for(:session, url: login_path) do |f| %>
+			<%= f.label :email %>
+			<%= f.text_field :email, class: 'form-control' %>
+
+			<%= f.label :password %>
+			<%= f.password_field :password, class: 'form-control' %>
+
+			<!-- 'params' hash(제출된 로그인 폼을 위한 것)는 체크박스(checkbox) 폼까지 포함합니다. -->
+			<%= f.label :remember_me, class: "checkbox inline" do %>
+				<%= f.check_box :remember_me %>
+				<span>Remember me on this computer</span>
+			<% end %>
+
+			<%= f.submit "Log in", class: "btn btn-primary" %>
+		<% end %>
+
+		<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+	</div>
+</div>

@@ -5,6 +5,10 @@
 # 루트(routes) 중 두번째. 
 
 Rails.application.routes.draw do
+  get 'logins/new'
+
+  get 'sessions/new'
+
   get 'users/new'
 
   get 'hello_moon/bla'
@@ -22,6 +26,10 @@ Rails.application.routes.draw do
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   get 'signup' => 'users#new'
+
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
   
   resources :microposts
   resources :users
